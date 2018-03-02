@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />        
+        <title></title>
+    <head>
+    <body>
+        <input type="text" id="duma" />
+        <input type="button" value="Fordít" onclick="fordit()" />
+        <script>
+            function fordit() {
+                var s=document.getElementById('duma').value;
+                var f='';
+                for (var i=0;i<s.length;i++)
+                    f=s[i]+f;
+                document.getElementById('duma').value=f;
+            }
+        </script>
+    </body>
+</html>
